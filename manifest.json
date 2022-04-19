@@ -1,9 +1,9 @@
 {
   "vendor": "vtex",
-  "name": "countdown",
+  "name": "posts",
   "version": "0.0.1",
-  "title": "Countdown",
-  "description": "Countdown component",
+  "title": "Posts",
+  "description": "Post component",
   "defaultLocale": "pt-BR",
   "builders": {
     "messages": "1.x",
