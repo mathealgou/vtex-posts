@@ -10,12 +10,12 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	width: 400px;
-	transition: 0.3s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	transition: 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 	padding: 28px;
 	border: 1px solid transparent;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .postContainer:hover {
@@ -23,17 +23,29 @@
 	border-radius: 12px;
 	box-shadow: 3px 3px 5px #bababa;
 	cursor: pointer;
+	transform: scale(1.02) translateY(-3px) translateX(-3px);
 }
 .postTitle {
 	font-size: 18px;
-	font-weight: 500;
+	font-weight: 400;
+	padding-bottom: 10px;
+	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 .postTitle::first-letter {
 	text-transform: capitalize;
 }
 .postBody {
 	text-indent: 12px;
+	font-weight: 300;
 	color: #606060;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .postBody::first-letter {
 	text-transform: capitalize;
