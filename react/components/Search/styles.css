@@ -25,6 +25,9 @@
 		border-radius: 0;
 		height: 38px;
 	}
+	.postSearchButton:hover {
+		cursor: pointer;
+	}
 }
 @media screen and (max-width: 1024px) {
 	.postSearchWrapper {

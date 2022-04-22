@@ -1,4 +1,26 @@
-.postsContainer {
+@media screen and (min-width: 1024px) {
+	.postsContainer {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		width: 1252px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.postsContainer {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+}
+
+.postsWrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

@@ -2,7 +2,7 @@ import React from "react";
 import { useCssHandles } from "vtex.css-handles";
 import styles from "./styles.css";
 
-const CSS_HANDLES = ["postContainer", "postTitle", "postBody"];
+const CSS_HANDLES = ["postWrapper", "postContainer", "postTitle", "postBody"];
 
 interface Post {
 	title: string;
@@ -13,11 +13,13 @@ interface Post {
 export const Post = (post: Post) => {
 	const handles = useCssHandles(CSS_HANDLES);
 	return (
-		<div className={`${handles.postContainer} ${styles.postContainer}`}>
-			<h1 className={`${handles.postTitle} ${styles.postTitle}`}>
-				{post.title}
-			</h1>
-			<p className={`${handles.postBody}  ${styles.postBody}`}>{post.body}</p>
+		<div className={`${handles.postWrapper} ${styles.postWrapper}`}>
+			<div className={`${handles.postContainer} ${styles.postContainer}`}>
+				<h1 className={`${handles.postTitle} ${styles.postTitle}`}>
+					{post.title}
+				</h1>
+				<p className={`${handles.postBody}  ${styles.postBody}`}>{post.body}</p>
+			</div>
 		</div>
 	);
 };

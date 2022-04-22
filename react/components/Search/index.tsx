@@ -15,23 +15,30 @@ const CSS_HANDLES = [
 
 export function Search({ handleFilter, search }: Props) {
 	const handles = useCssHandles(CSS_HANDLES);
+
 	return (
 		<div className={`${handles.postSearchWrapper} ${styles.postSearchWrapper}`}>
-			<div
+			<form
 				className={`${handles.postSearchContainer} ${styles.postSearchContainer}`}
+				onSubmit={(e) => {
+					e.preventDefault();
+					search();
+				}}
 			>
 				<input
 					type="text"
 					onChange={handleFilter}
 					className={`${handles.postSearchInput} ${styles.postSearchInput}`}
+					inputMode="search"
 				/>
 				<button
 					onClick={search}
 					className={`${handles.postSearchButton} ${styles.postSearchButton}`}
+					type="submit"
 				>
-					Search
+					Buscar
 				</button>
-			</div>
+			</form>
 		</div>
 	);
 }
