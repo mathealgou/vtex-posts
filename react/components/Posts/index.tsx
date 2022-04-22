@@ -4,12 +4,9 @@ import { Post } from "../Post";
 import { Search } from "../Search";
 import styles from "./styles.css";
 
-const CSS_HANDLES = [
-	"postsWrapper",
-	"postsContainer",
-	"postSearchInput",
-	"postSearchButton",
-];
+interface Props {
+	url: string;
+}
 
 type Post = {
 	title: string;
@@ -17,7 +14,14 @@ type Post = {
 	id: number;
 };
 
-export const Posts = () => {
+const CSS_HANDLES = [
+	"postsWrapper",
+	"postsContainer",
+	"postSearchInput",
+	"postSearchButton",
+];
+
+export const Posts = ({ url }: Props) => {
 	const handles = useCssHandles(CSS_HANDLES);
 	const [posts, setPosts] = useState<Post[]>([] as Post[]);
 	const [filter, setFilter] = useState("");
@@ -26,7 +30,7 @@ export const Posts = () => {
 
 	function search() {
 		setIsLoading(true);
-		fetch("https://jsonplaceholder.typicode.com/posts")
+		fetch(url)
 			.then((response) => response.json())
 			.then((json) => setPosts(json));
 
