@@ -25,6 +25,7 @@
 	cursor: pointer;
 	transform: scale(1.02) translateY(-3px) translateX(-3px);
 }
+
 .postTitle {
 	font-size: 18px;
 	font-weight: 400;
@@ -34,9 +35,11 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+
 .postTitle::first-letter {
 	text-transform: capitalize;
 }
+
 .postBody {
 	text-indent: 12px;
 	font-weight: 300;
@@ -47,9 +50,11 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+
 .postBody::first-letter {
 	text-transform: capitalize;
 }
+
 .postBody::after {
 	content: ".";
 }

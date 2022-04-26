@@ -1,0 +1,74 @@
+.pageSelectorWrapper {
+	padding: 40px;
+}
+
+.pageSelectorContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 200px;
+}
+.pageSelectorCurrentPage {
+	width: 120px;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	overflow: hidden;
+	transition: 1s all ease-in-out;
+}
+.pageSelectorButtonMinus {
+	background-color: #25282a;
+	border: none;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pageSelectorbuttonMinusDisabled {
+	background-color: #eeeeee;
+	border: none;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: not-allowed;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pageSelectorbuttonPlusDisabled {
+	background-color: #eeeeee;
+	border: none;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: not-allowed;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pageSelectorButtonPlus {
+	background-color: #25282a;
+	border: none;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
