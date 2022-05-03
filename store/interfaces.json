@@ -1,5 +1,6 @@
 {
   "custom-posts": {
-    "component": "Posts"
+    "component": "Posts",
+    "render": "client"
   }
 }
