@@ -23,6 +23,10 @@ A block that fetches info from an API and displays it orderly.
 	}
 ```
 
+3. On the API.
+
+The API call should return an array of objects containing "title" and "body" keys in json form.
+
 ### `custom-posts` props
 
 | Prop name     | Type            | Description                                               | Default value        | Required |
