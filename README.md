@@ -32,7 +32,7 @@ The API call should return an array of objects containing "title" and "body" key
 | Prop name     | Type            | Description                                               | Default value        | Required |
 | ------------- | --------------- | --------------------------------------------------------- | -------------------- | -------- |
 | `url`         | `string`       | The url from which the block will fetch it's data.         | `null`               | `Yes`    |
-| `itemsPerPage`| `XXXXXX`       | The number of items that will be displayed in each page.   | `6`                  | `No`   |
+| `itemsPerPage`| `number`       | The number of items that will be displayed in each page.   | `6`                  | `No`   |
 
 
 ## Customization
