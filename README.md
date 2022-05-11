@@ -9,7 +9,7 @@ A block that fetches info from an API and displays it orderly.
 1. Adding the app as a theme dependency in the `manifest.json` file.
 
 ```json
-"vtex.posts": "0.x",
+"avantivtexio.posts": "0.x",
 ```
 
 2. Declaring the app's main block in a given theme template or inside another block from the theme.
